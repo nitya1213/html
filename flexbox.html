@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body
+        {
+            font-family: monospace;
+            font-size: 20px;
+            padding: 0 20px 30px 0;
+            line-height: 1.4;
+        }
+        .flex_container
+        {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            align-content: center;
+        }
+        .flex_item
+        {
+            width: 75px;
+            height: 75px;
+            background-color: lightslategray;
+            border: 2px solid rebeccapurple;
+            text-align: center;
+            font-size: 2em;
+            color: lightsteelblue;
+            font-weight: bold;
+           
+        }
+        #flex_item_1
+        {
+            background-color: lightblue;
+            flex-basis: 200px;
+        }
+        #flex_item_2
+        {
+            background-color: rgb(192, 135, 138);
+        }
+        #flex_item_3
+        {
+            background-color: rgb(130, 180, 120);
+            flex-grow: 2;
+        }
+        #flex_item_4
+        {
+            background-color: rgb(155, 110, 173);
+            order: 1;
+            align-self: center;
+        }
+        #flex_item_5
+        {
+            background-color: rgb(208, 224, 57);
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <div class="flex_item" id="flex_item_1">1</div>
+        <div class="flex_item" id="flex_item_2">2</div>
+        <div class="flex_item" id="flex_item_3">3</div>
+        <div class="flex_item" id="flex_item_4">4</div>
+        <div class="flex_item" id="flex_item_5">5</div>
+    </div>
+</body>
+</html>
